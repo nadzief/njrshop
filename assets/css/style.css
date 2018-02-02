@@ -1,0 +1,201 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+body {
+  font-family: 'Open Sans', 'sans-serif';
+}
+#kiri {
+	float: left;
+	width: 240px;
+	height: 2500px;
+	background: white;
+	clear: both;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+	margin-left: 3px;
+	margin-top: 70px;
+}
+
+#content {
+	float: right;
+	width: 1090px;
+	height: 2500px;
+	background: white;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+  margin-top:  70px;
+}
+
+#right {
+	float: right;
+}
+
+#slideshow img
+    {
+    position: absolute;
+    left: 0;
+    top: 87;
+    width: 1343px;
+    height: 235px;
+    margin-left: 2px;
+    margin-top: -19px;
+ }
+
+ .navbar-kanan{
+ 	float: right;
+ }
+
+#footers {
+	height:780px;
+	clear:both;
+	background: royalblue;
+	width: 1350px;
+  color: black;
+}
+
+#footer {
+	height:60px;
+	clear:both;
+	background: black;
+}
+
+.footer-bottom {
+	background: midnightblue;
+	color: white;
+	border-top: 1px solid skyblue;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.footer-bottom p.pull-left {
+	padding-top: 6px;
+}
+
+.dropdown-menu {
+	background-color: white;
+	color: steelblue;
+	border: 1px solid;
+}
+
+.divider {
+	border: 1px solid black;
+}
+
+/*Panel tabs*/
+.panel-tabs {
+    position: relative;
+    bottom: 30px;
+    clear:both;
+    border-bottom: 1px solid transparent;
+}
+
+.panel-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.panel-tabs > li > a {
+    margin-right: 2px;
+    margin-top: 4px;
+    line-height: .85;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color: #ffffff;
+}
+
+.panel-tabs > li > a:hover {
+    border-color: transparent;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.panel-tabs > li.active > a,
+.panel-tabs > li.active > a:hover,
+.panel-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: rgba(255,255,255, .23);
+    border-bottom-color: transparent;
+}
+/* .fa { font-size: 50px;text-align: right;position: absolute;top: 7px;right: 27px;outline: none; } */
+/* a { transition: all .3s ease;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-o-transition: all .3s ease; } */
+/* Visitor */
+a.visitor i,.visitor h4.list-group-item-heading { color:#E48A07; }
+a.visitor:hover { background-color:#E48A07; }
+a.visitor:hover * { color:#FFF; }
+/* Facebook */
+a.facebook-like i,.facebook-like h4.list-group-item-heading { color:#3b5998; }
+a.facebook-like:hover { background-color:#3b5998; }
+a.facebook-like:hover * { color:#FFF; }
+/* Google */
+a.google-plus i,.google-plus h4.list-group-item-heading { color:#dd4b39; }
+a.google-plus:hover { background-color:#dd4b39; }
+a.google-plus:hover * { color:#FFF; }
+/* Twitter */
+a.twitter i,.twitter h4.list-group-item-heading { color:#00acee; }
+a.twitter:hover { background-color:#00acee; }
+a.twitter:hover * { color:#FFF; }
+/* Linkedin */
+a.linkedin i,.linkedin h4.list-group-item-heading { color:#0e76a8; }
+a.linkedin:hover { background-color:#0e76a8; }
+a.linkedin:hover * { color:#FFF; }
+/* Tumblr */
+a.tumblr i,.tumblr h4.list-group-item-heading { color:#34526f; }
+a.tumblr:hover { background-color:#34526f; }
+a.tumblr:hover * { color:#FFF; }
+/* Youtube */
+a.youtube i,.youtube h4.list-group-item-heading { color:#c4302b; }
+a.youtube:hover { background-color:#c4302b; }
+a.youtube:hover * { color:#FFF; }
+/* Vimeo */
+a.vimeo i,.vimeo h4.list-group-item-heading { color:#44bbff; }
+a.vimeo:hover { background-color:#44bbff; }
+a.vimeo:hover * { color:#FFF; }
+
+.btn-vertical-slider{ margin-left:35px; cursor:pointer;}
+a {  cursor:pointer;}
+.carousel.vertical .carousel-inner .item {
+  -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+      -ms-transition: 0.6s ease-in-out top;
+       -o-transition: 0.6s ease-in-out top;
+          transition: 0.6s ease-in-out top;
+}
+
+ .carousel.vertical .active {
+  top: 0;
+}
+
+ .carousel.vertical .next {
+  top: 100%;
+}
+
+ .carousel.vertical .prev {
+  top: -100%;
+}
+
+ .carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+ .carousel.vertical .active.left {
+  top: -100%;
+}
+
+ .carousel.vertical .active.right {
+  top: 100%;
+}
+
+ .carousel.vertical .item {
+    left: 0;
+}​
+.best{
+	position: absolute;
+	width: 32px;
+	height:32px;
+	background-image: url('Produk/BestSeller.gif');
+}

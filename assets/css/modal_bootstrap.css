@@ -1,0 +1,25 @@
+.modal-dialog{
+	border-radius: 0;
+	margin-top: 70px;
+}
+.modal-content{
+	border-radius: 0;
+}
+.modal-header{
+	background-color: royalblue;
+	color: white;
+	border-radius: 0;
+}
+.modal-title{
+	border-radius: 0;
+}
+.modal-body{
+	background-color: royalblue;
+	border-radius: 0;
+	color: black;
+}
+.modal-footer{
+	background-color: royalblue;
+	color: white;
+	border-radius: 0;
+}

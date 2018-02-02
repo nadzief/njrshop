@@ -1,0 +1,55 @@
+1. Stok produk berkurang saat transaksi selesai. ( in progress )
+2. Admin page lengkap
+  
+                --- Optional ---
+1. Ongkir sesuai jasa pengiriman (clear)
+2. Produk terlaris dengan slideshow (clear)
+3. Session login all page
+4. Konfirmasi Pembayaran 
+
+error : stok produk hanya berkurang 1 row saja.
+
+solving : karena saat insert produk tidak di looping dengan for,
+	  letak kesalahan ada di controller web,
+	  function insert_check_out()
+	
+	contoh : 
+	$data = array(
+			'nama' => $nama,
+			'no_hp' => $no_hp,
+			'email' => $email,
+			'alamat' => $alamat,
+			'alamat2' => $alamat2,
+			'jasa_pengiriman' => $jasa_pengiriman',
+			'kota' => $kota,
+			'provinsi' => $provinsi,
+			'kode_pos' => $kode_pos,
+			'negara' => $negara,
+			'tgl' => $tgl,
+			'jam' => $jam,
+			'status' => 'Pending',
+			'jumlah' => $item['qty'],
+			'id_produk' => $item['id']
+		    );
+	
+	fixed : 
+	for ($i = 0; $i < count($item); $i++) {
+	$data = array(  
+			'nama' => $nama[$i],
+			'no_hp' => $no_hp[$i],
+			'email' => $email[$i],
+			'alamat' => $alamat[$i],
+			'alamat2' => $alamat2[$i],
+			'jasa_pengiriman' => $jasa_pengiriman[$i],
+			'kota' => $kota[$i],
+			'provinsi' => $provinsi[$i],
+			'kode_pos' => $kode_pos[$i],
+			'negara' => $negara[$i],
+			'tgl' => $tgl[$i],
+			'jam' => $jam[$i],
+			'status' => 'Pending',
+			'jumlah' => $item[$i]['qty'],
+			'id_produk' => $item[$i]['id']
+		    );
+	}
+	
